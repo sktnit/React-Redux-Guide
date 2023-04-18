@@ -69,46 +69,46 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-React-Redux Step by Step Guide given below:
+### React-Redux Step by Step Guide given below:
 
-1. Start by creating a new React app using create-react-app:
-#### npx create-react-app react-redux-todo
-#### cd my-app
+### 1. Start by creating a new React app using create-react-app:
+       npx create-react-app react-redux-todo
+       cd my-app
 
-2. Install the required packages:
-#### npm install redux react-redux redux-thunk redux-persist
+### 2. Install the required packages:
+       npm install redux react-redux redux-thunk redux-persist
 
-3. Create a new directory store in the src directory.
-#### mkdir src/store
+### 3. Create a new directory store in the src directory.
+       mkdir src/store
 
-4. Inside the store directory, create a new file called index.js.
-#### touch src/store/index.js
+### 4. Inside the store directory, create a new file called index.js.
+       touch src/store/index.js
 
-5. Open the index.js file and create the Redux store using redux-persist: 
+### 5. Open the index.js file and create the Redux store using redux-persist: 
 <img width="1280" alt="Screenshot 2023-04-19 at 12 39 52 AM" src="https://user-images.githubusercontent.com/67646236/232895988-75546097-248b-4b11-8f5f-fb9082eabd7c.png">
 
-6. Create a reducers directory in the src folder and todos and counter directories for multiple reducers:
-#### mkdir src/reducers
-#### mkdir src/reducers/todos
-#### mkdir src/reducers/counter
+### 6. Create a reducers directory in the src folder and todos and counter directories for multiple reducers:
+       mkdir src/reducers
+       mkdir src/reducers/todos
+       mkdir src/reducers/counter
 
-7. Create todoSlice.js inside the src/reducers/todos/ and add actions such as addTodo, deleteTodo, and toggleTodo to the reducer object. Here’s an example: 
+### 7. Create todoSlice.js inside the src/reducers/todos/ and add actions such as addTodo, deleteTodo, and toggleTodo to the reducer object. Here’s an example: 
 <img width="1280" alt="Screenshot 2023-04-19 at 12 39 52 AM" src="https://user-images.githubusercontent.com/67646236/232896464-ace3e02b-94ed-4365-b674-57c1c9a8cec6.png">
 
-8. Create counterSlice.js inside the src/reducers/counter/ and add actions such as increment or decrement to the reducer object. Here’s an example:
+### 8. Create counterSlice.js inside the src/reducers/counter/ and add actions such as increment or decrement to the reducer object. Here’s an example:
 <img width="1280" alt="Screenshot 2023-04-19 at 12 44 32 AM" src="https://user-images.githubusercontent.com/67646236/232896582-69b2798a-578e-4431-bbaf-e831e4f6462a.png">
 
-9. Now create a rootReducer.js to combine all the reducers. Here’s an example: 
+### 9. Now create a rootReducer.js to combine all the reducers. Here’s an example: 
 <img width="1280" alt="Screenshot 2023-04-19 at 1 01 32 AM" src="https://user-images.githubusercontent.com/67646236/232897031-e7f5ed65-b06c-4758-b6c6-a5bfa04a8188.png">
 
-10. Open the src/index.js file and import the Provider component from react-redux, the store, and persistor objects from store/index.js. Wrap the App component with the Provider component and PersistGate component:
+### 10. Open the src/index.js file and import the Provider component from react-redux, the store, and persistor objects from store/index.js. Wrap the App component with the Provider component and PersistGate component:
 <img width="1280" alt="Screenshot 2023-04-19 at 1 11 58 AM" src="https://user-images.githubusercontent.com/67646236/232897220-6025e37d-6a78-4f36-b73b-ca3daaf9fa9d.png">
 
-11. Create a component.js to showcase Counter and Todos in the browser. Here’s an example code:
+### 11. Create a component.js to showcase Counter and Todos in the browser. Here’s an example code:
 <img width="1280" alt="Screenshot 2023-04-19 at 1 16 04 AM" src="https://user-images.githubusercontent.com/67646236/232897319-161628c0-60d1-4b33-be6a-f1ddc1a846f2.png">
 <img width="1280" alt="Screenshot 2023-04-19 at 1 16 38 AM" src="https://user-images.githubusercontent.com/67646236/232897371-43e4d9bd-0152-4b07-97a1-d2ee908d7aee.png">
 
-12. Now do ‘npm start’ to run the app.
+### 12. Now do ‘npm start’ to run the app.
 <img width="1280" alt="Screenshot 2023-04-19 at 1 29 18 AM" src="https://user-images.githubusercontent.com/67646236/232897586-d099d5ba-b026-4cf3-a7d6-44a329b99dd3.png">
 
 
