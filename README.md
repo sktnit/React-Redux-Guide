@@ -69,26 +69,28 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
+React-Redux Step by Step Guide given below:
+
 1. Start by creating a new React app using create-react-app:
-npx create-react-app react-redux-todo
-cd my-app
+#### npx create-react-app react-redux-todo
+#### cd my-app
 
 2. Install the required packages:
-npm install redux react-redux redux-thunk redux-persist
+#### npm install redux react-redux redux-thunk redux-persist
 
 3. Create a new directory store in the src directory.
-mkdir src/store
+#### mkdir src/store
 
 4. Inside the store directory, create a new file called index.js.
-touch src/store/index.js
+#### touch src/store/index.js
 
 5. Open the index.js file and create the Redux store using redux-persist: 
 <img width="1280" alt="Screenshot 2023-04-19 at 12 39 52 AM" src="https://user-images.githubusercontent.com/67646236/232895988-75546097-248b-4b11-8f5f-fb9082eabd7c.png">
 
 6. Create a reducers directory in the src folder and todos and counter directories for multiple reducers:
-mkdir src/reducers
-mkdir src/reducers/todos
-mkdir src/reducers/counter
+#### mkdir src/reducers
+#### mkdir src/reducers/todos
+#### mkdir src/reducers/counter
 
 7. Create todoSlice.js inside the src/reducers/todos/ and add actions such as addTodo, deleteTodo, and toggleTodo to the reducer object. Here’s an example: 
 <img width="1280" alt="Screenshot 2023-04-19 at 12 39 52 AM" src="https://user-images.githubusercontent.com/67646236/232896464-ace3e02b-94ed-4365-b674-57c1c9a8cec6.png">
