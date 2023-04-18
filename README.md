@@ -68,3 +68,33 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+Start by creating a new React app using create-react-app:
+npx create-react-app react-redux-todo
+cd my-app
+Install the required packages:
+npm install redux react-redux redux-thunk redux-persist
+Create a new directory store in the src directory.
+mkdir src/store
+Inside the store directory, create a new file called index.js.
+touch src/store/index.js
+Open the index.js file and create the Redux store using redux-persist:
+
+Create a reducers directory in the src folder and todos and counter directories for multiple reducers:
+mkdir src/reducers
+mkdir src/reducers/todos
+mkdir src/reducers/counter
+Create todoSlice.js inside the src/reducers/todos/ and add actions such as addTodo, deleteTodo, and toggleTodo to the reducer object. Here’s an example: 
+
+Create counterSlice.js inside the src/reducers/counter/ and add actions such as increment or decrement to the reducer object. Here’s an example:
+
+Now create a rootReducer.js to combine all the reducers. Here’s an example: 
+
+Open the src/index.js file and import the Provider component from react-redux, the store, and persistor objects from store/index.js. Wrap the App component with the Provider component and PersistGate component:
+
+Create a component.js to showcase Counter and Todos in the browser. Here’s an example code:
+
+
+Now do ‘npm start’ to run the app.
+
+
